@@ -22,3 +22,17 @@
   display: block;
   text-align: center;
 }
+
+#apresentacao{
+  background-color: #4392F1 !important;
+  border-color: #4392F1 !important;
+  margin-top: 5%;
+}
+
+#atividades{
+  margin-bottom: 1%;
+}
+
+a{
+  text-decoration: none!important;
+}
