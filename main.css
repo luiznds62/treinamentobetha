@@ -1,3 +1,19 @@
 .title-content {
   background-color: #a2c084 !important;
 }
+
+.container{
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#armored_website{
+  display: inline-block;
+}
+
+.footer{
+  display: block;
+  text-align: center;
+}
