@@ -54,6 +54,7 @@ function enviarPesquisa() {
         $("#formComentario").val("");
         $("#formPergunta1").prop('selectedIndex',0);
         $("#formPergunta2").prop('selectedIndex',0);
+        $("#formNota").prop('selectedIndex',0);
       } else {
         alert("Erro");
       }
