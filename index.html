@@ -246,6 +246,81 @@
         </div>
     </div>
 
+    <div id="modalProjetos" data-bf-loading-type="dialog" class="modal fade in" style="display: none; z-index: 1070;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-content__sidebar">
+                <div class="modal-header">
+                    <h5 class="modal-title">Saiba mais</h5>
+                </div>
+                <div class="modal-body modal-run">
+                    <h3 class="text-center">Apresentador: Rafhael Barabas e Gustavo Gomes</h3>
+                    <h2 class="text-center">Dia 29/11/2019 - 08h até 12h</h2>
+                    <p class="text-center mt-5"><b>Tema:</b> Projetos em andamento</p>
+                    <div class="row text-center">
+                        <div class="col 6">
+                            <a target="_blank"
+                                href="https://docs.google.com/presentation/d/1E6gl2HnK405vf1wa1nRux4U7s_ILuMnp9mo8cmf_YaQ/edit?usp=drive_web&ouid=107020538126018743966"
+                                id="apresentacao" class="btn btn-primary  btn-block">Ir para apresentação</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button type="button" class="btn btn-secondary" data-dismiss="modal"
+                        onclick="escondeModal('modalProjetos')">Fechar</button></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="modalAtividadesFinais" data-bf-loading-type="dialog" class="modal fade in"
+        style="display: none; z-index: 1070;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-content__sidebar">
+                <div class="modal-header">
+                    <h5 class="modal-title">Saiba mais</h5>
+                </div>
+                <div class="modal-body modal-run">
+                    <h3 class="text-center">Apresentador: Henrique Cechinel e Roberto Casagrande</h3>
+                    <h2 class="text-center">Dia 28/11/2019 - 13h até 18h</h2>
+                    <p class="text-center mt-5"><b>Tema:</b> Exercícios finais para fixação</p>
+                    <div class="row text-center">
+                        <div class="col 6">
+                            <a target="_blank"
+                                href="https://docs.google.com/document/d/1s-squhQ_YnbABGeJ_M-NQzNI_dgczroCqFZgJyc0xRQ/edit"
+                                id="apresentacao" class="btn btn-primary  btn-block">Ir para atividade</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button type="button" class="btn btn-secondary" data-dismiss="modal"
+                        onclick="escondeModal('modalAtividadesFinais')">Fechar</button></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="modalRelatoriosListas" data-bf-loading-type="dialog" class="modal fade in"
+        style="display: none; z-index: 1070;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-content__sidebar">
+                <div class="modal-header">
+                    <h5 class="modal-title">Saiba mais</h5>
+                </div>
+                <div class="modal-body modal-run">
+                    <h3 class="text-center">Apresentador: Henrique Cechinel e Roberto Casagrande</h3>
+                    <h2 class="text-center">Dia 28/11/2019 - 10h até 12h</h2>
+                    <p class="text-center mt-5"><b>Tema:</b> Relatórios com listas</p>
+                    <div class="row text-center">
+                        <div class="col 6">
+                            <p><b>Link:</b> </p>
+                            <a target="_blank" href="">https://1drv.ms/b/s!AqVtxyCSUUFujddADgk0qP3D2je_lQ>Documentação</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button type="button" class="btn btn-secondary" data-dismiss="modal"
+                        onclick="escondeModal('modalRelatoriosListas')">Fechar</button></div>
+            </div>
+        </div>
+    </div>
+
     <div class="container-fluid">
         <header>
             <div class="megamenu-container">
@@ -342,8 +417,42 @@
                                 <div class="title-content">
                                     <div class="flex-list-header"></div>
                                     <div class="flex-list-body">
-                                        <i class="icone-produto fa fa-file"></i>
+                                        <i class="icone-produto fa fa-file-word"></i>
                                         <div class="title ellipsis"><span>API de arquivos</span></div>
+                                    </div>
+                                    <div class="flex-list-footer"></div>
+                                </div>
+                            </li>
+
+                            <li onclick="mostraModal('modalProjetos')" id="webservices" class="col-3">
+                                <div class="title-content">
+                                    <div class="flex-list-header"></div>
+                                    <div class="flex-list-body">
+                                        <i class="icone-produto fa fa-calendar-check"></i>
+                                        <div class="title ellipsis"><span>Projetos de Extensões</span></div>
+                                    </div>
+                                    <div class="flex-list-footer"></div>
+                                </div>
+                            </li>
+
+
+                            <li onclick="mostraModal('modalAtividadesFinais')" id="webservices" class="col-3">
+                                <div class="title-content">
+                                    <div class="flex-list-header"></div>
+                                    <div class="flex-list-body">
+                                        <i class="icone-produto fa fa-snowboarding"></i>
+                                        <div class="title ellipsis"><span>Atividades Finais</span></div>
+                                    </div>
+                                    <div class="flex-list-footer"></div>
+                                </div>
+                            </li>
+
+                            <li onclick="mostraModal('modalRelatoriosListas')" id="webservices" class="col-3">
+                                <div class="title-content">
+                                    <div class="flex-list-header"></div>
+                                    <div class="flex-list-body">
+                                        <i class="icone-produto fa fa-clipboard-list"></i>
+                                        <div class="title ellipsis"><span>Relatorios e Listas</span></div>
                                     </div>
                                     <div class="flex-list-footer"></div>
                                 </div>
